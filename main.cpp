@@ -155,9 +155,9 @@ void draw()
 // Usamos el caracter ♥ para las vidas
 	mvprintw(0, 100, "[ VIDAS:     ]");
 
-	for (int i = 0; i < miNave.getVidas(); i++)
+	for (int i = 0; i < miEstudiante.getVidas(); i++)
 	{
-		mvaddch(0, 109 + i, ACS_HEART);
+		mvaddch(0, 109 + i, ACS_DIAMOND);
 	}
 
 	
@@ -199,6 +199,7 @@ void gameover()
 		salir = true;
 	}
 }
+
 
 
 
