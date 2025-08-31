@@ -33,11 +33,11 @@ void Manifestante::draw()
        - -   |  
        / \      
   \******************/ 
-  mvaddch(m_y, m_x, ' 0  {¡#!}');
-  mvaddch(m_y + 1, m_x, '- -   |  ');
-  mvaddch(m_y + 2, m_x, '/ \      ');
+ mvprintw(m_y, m_x, R"( 0  {¡#!})");
+ mvprintw(m_y + 1, m_x, R"(- -   |  )");
+ mvprintw(m_y + 2, m_x, R"(/ \      )");
 }
-void Manifestante::colision(Estudiante &rEstudiante)
+void Manifestante::colision(Estudiante &rEstudiante);
 {
   // Verificamos la colisión. 
   // Si se cumplen estas condiciones quiere decir que el estudiante entró
